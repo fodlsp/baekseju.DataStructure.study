@@ -18,7 +18,6 @@ public class Play {
             switch (n) {
 
                 case 1:
-
                     System.out.println("넣을 값을 입력해주세요.");
                     int data = sc.nextInt();
                     queue.add(data);
@@ -29,7 +28,6 @@ public class Play {
                 case 3:
 
                     break;
-
                 default:
                     System.out.println("선택을 다시해주세요.");
             }
