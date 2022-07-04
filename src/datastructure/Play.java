@@ -1,3 +1,5 @@
+package datastructure;
+
 import java.util.Scanner;
 
 public class Play {
@@ -27,6 +29,9 @@ public class Play {
                 case 3:
 
                     break;
+
+                default:
+                    System.out.println("선택을 다시해주세요.");
             }
         }
     }

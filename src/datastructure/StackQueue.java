@@ -1,3 +1,5 @@
+package datastructure;
+
 public class StackQueue {
 
     Stack stack1 = new Stack();

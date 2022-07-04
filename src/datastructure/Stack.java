@@ -1,3 +1,5 @@
+package datastructure;
+
 public class Stack {
 
     private Node top; //처음노드
