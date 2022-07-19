@@ -22,7 +22,7 @@ public class Play {
                     stack.push(data);
                     break;
                 case 2:
-                    System.out.println(stack.push());
+                    System.out.println(stack.pop());
                     break;
                 case 3:
 

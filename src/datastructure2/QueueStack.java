@@ -7,20 +7,21 @@ public class QueueStack {
 
     public void push(int data) {
 
-        if(queue1.isEmpty()){
+        if (queue1.isEmpty()) {
             queue1.inqueue(data);
-        } else {
-            while (!queue1.isEmpty()){
-                queue2.inqueue(queue1.dequeue());
-            }
-                queue1.inqueue(data);
-                while(!queue2.isEmpty()) {
-                    queue1.inqueue(queue2.dequeue());
-                }
+            return ;
         }
+        while (!queue1.isEmpty()) {
+            queue2.inqueue(queue1.dequeue());
+        }
+        queue1.inqueue(data);
+        while (!queue2.isEmpty()) {
+            queue1.inqueue(queue2.dequeue());
+        }
+
     }
 
-    public int push(){
+    public int pop() {
         return queue1.dequeue();
     }
 }
